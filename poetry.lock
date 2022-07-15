@@ -39,6 +39,14 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
+name = "numpy"
+version = "1.10.0"
+description = "NumPy: array processing for numbers, strings, records, and objects."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "py"
 version = "1.11.0"
 description = "library with cross-python path, ini-parsing, io, code, log facilities"
@@ -123,7 +131,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "d2de4e0a802891caa79a1bac73dfd8a42ad33c09d6a3b4201975a87994981820"
+content-hash = "ff036440d279af207a6a0666131f6bb853debbd54c4112f115ce4262df7461cb"
 
 [metadata.files]
 certifi = [
@@ -185,6 +193,17 @@ idna = [
     {file = "idna-2.8-py2.py3-none-any.whl", hash = "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"},
     {file = "idna-2.8.tar.gz", hash = "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"},
 ]
+numpy = [
+    {file = "numpy-1.10.0-cp26-cp26m-manylinux1_x86_64.whl", hash = "sha256:9f917e14e14d9a3123eb651af572fbe1fe7f8da4854ee9b22940587bb527cb23"},
+    {file = "numpy-1.10.0-cp26-cp26mu-manylinux1_x86_64.whl", hash = "sha256:189f72f4ff774382187a82dedcae58050fa110c1bb060a98588a649859cf22df"},
+    {file = "numpy-1.10.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:05952e952ed88fb6945d4b741f7472e66be31d0568b97865a051634e7fd01c5d"},
+    {file = "numpy-1.10.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:97a215a6cc010247a0df4d55e874d79d27fe234981ac1005c45cccdb48e9731d"},
+    {file = "numpy-1.10.0-cp33-cp33m-manylinux1_x86_64.whl", hash = "sha256:124881e12015ff7dcd64640f22944ec04a2a1b27c7c77028a1239c195b2a7b14"},
+    {file = "numpy-1.10.0-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:d924d836466e83221c0812015828a36bfd93c24bb58b3c11e61352458dd581e6"},
+    {file = "numpy-1.10.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:c51659d34965cb62ca98080f49355063fbd0004064c16c671fb8ed088ab12692"},
+    {file = "numpy-1.10.0.post2.tar.gz", hash = "sha256:2ebd29edb2f1a4a19e86cfc27c1b2283314d57509b2bfc6606b4f05d620c230b"},
+    {file = "numpy-1.10.0.post2.zip", hash = "sha256:35bc2e3ea058f998c3a54d869a4c8adead8b6c9a26ceb8ee5da28773ae32cb05"},
+]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
     {file = "py-1.11.0.tar.gz", hash = "sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719"},
@@ -211,3 +230,4 @@ urllib3 = [
     {file = "urllib3-1.24.3-py2.py3-none-any.whl", hash = "sha256:a637e5fae88995b256e3409dc4d52c2e2e0ba32c42a6365fee8bbd2238de3cfb"},
     {file = "urllib3-1.24.3.tar.gz", hash = "sha256:2393a695cd12afedd0dcb26fe5d50d0cf248e5a66f75dbd89a3d4eb333a61af4"},
 ]
+
