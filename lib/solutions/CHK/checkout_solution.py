@@ -6,10 +6,10 @@ def checkout(skus):
     try:
         # counter dictionary of all items 
         items = Counter(skus)
-        prices = [50,30,20,15,40]
+        prices = [50,30,20,15,40,10]
 
         # check item validity
-        valid_items = ['A', 'B', 'C', 'D', 'E']
+        valid_items = ['A', 'B', 'C', 'D', 'E', 'F']
         for item in items.keys():
             if item not in valid_items:
                 return -1
@@ -42,12 +42,12 @@ def checkout(skus):
                 quantity -= B_free_quan
                 quantity = int(np.maximum(0, quantity))
                 cost = quantity%2*price + int(quantity/2)*45
-            # # incorrectly made instructions for E - now obsolete
-            # elif item =='E':
-            #     if quantity>=3:
-            #         cost = int(quantity/3)*2*price + quantity%3*price
-            #     else: 
-            #         cost = quantity*price
+            # instructions for F 
+            elif item =='F':
+                if quantity>=3:
+                    cost = int(quantity/3)*2*price + quantity%3*price
+                else: 
+                    cost = quantity*price
             # others
             else:
                 cost = quantity*price
@@ -57,6 +57,5 @@ def checkout(skus):
 
     except:
         raise NotImplementedError()
-
 
 
