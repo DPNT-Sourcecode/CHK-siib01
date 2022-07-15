@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 from collections import Counter
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -57,5 +57,6 @@ def checkout(skus):
 
     except:
         raise NotImplementedError()
+
 
 
